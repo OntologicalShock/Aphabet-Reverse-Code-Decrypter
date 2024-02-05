@@ -4,10 +4,12 @@ inputText = input("Please enter the message you wish to decode:\n").lower()
 exitText = ""
 
 def reverseDecoder(inputText):
-    
     outputText = ""
     for char in inputText:
-        if char in alpha:
+        if inputText == "end":
+            print("Goodbye.")
+            break
+        elif char in alpha:
             alphaReverseIndex = alphaReverse.index(char)
             alphaChar = alpha[alphaReverseIndex]
             outputText += alphaChar
@@ -17,5 +19,5 @@ def reverseDecoder(inputText):
 
 while exitText != "end":
     reverseDecoder(inputText)
-    exitText = input("Enter next message to decode. Type 'end' to stop decoding.\n").lower()
+    exitText = input("Enter next message to decode. Type 'end' to stop.\n").lower()
     reverseDecoder(exitText)
