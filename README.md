@@ -1,0 +1,1 @@
+I wrote this quick script to help my wife and her friends decode some murder mystery clues in a boardgame. There are reverse alphabet cipher tools all over the internet, but it was a good exercise in how to write it myself. Maybe I'll come back and update it from a console app to a GUI app in the future.
